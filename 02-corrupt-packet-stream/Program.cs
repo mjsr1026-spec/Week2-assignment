@@ -3,6 +3,14 @@ int processedCount = 0;
 
 foreach (string packet in packets)
 {
+    if(packet == "CORRUPT")
+    {
+        continue;
+    }
+    else
+    {
+        processedCount += 1;
+    }
     // TODO: Bruk continue for CORRUPT.
     // TODO: Prosesser resten og øk processedCount.
 }
