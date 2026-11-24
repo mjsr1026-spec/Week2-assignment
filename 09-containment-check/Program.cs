@@ -1,4 +1,4 @@
-bool accepted = CanContain(10, 6, 4);
+bool accepted = CanContain(10, 6, 5);
 
 if (accepted)
 {
@@ -12,5 +12,5 @@ else
 static bool CanContain(int capacity, int occupied, int incoming)
 {
     // TODO
-    return false;
+    return occupied + incoming <= capacity;
 }
